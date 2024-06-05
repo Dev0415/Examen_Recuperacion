@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['username'] = $username;
                 echo "Inicio de sesión exitoso. Bienvenido, " . $username;
                 // Redireccionar a una página protegida (por ejemplo, `admin.php`)
-                header("Location: principal.php");
+                header("Location: admin.php");
                 exit();
             } else {
                 echo "Contraseña incorrecta.";
@@ -47,3 +47,4 @@ $conn->close();
 ?>
 
 <a href="iniciar_sesion.php">Volver</a>
+
